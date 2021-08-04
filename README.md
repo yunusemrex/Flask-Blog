@@ -18,7 +18,7 @@ Editor.create(username='your_username', password='your_password')
 Post.create(title=title, content=content)
 
 
-# Start on localhost
+# Now start the localhost server
 
 1- flask run
 
