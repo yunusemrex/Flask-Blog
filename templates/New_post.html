@@ -1,0 +1,20 @@
+{% extends 'Base.html' %}
+{% block title %} New Post {% endblock %}
+{% block main %}
+	<form method="POST" action="/addpost">
+		
+		<table>
+			<tr>
+				<th><label for="title">Post Header:</label></th>
+				<th><input type="text" name="title" require></br></th>
+			</tr>
+			<tr>
+				<td><label for="content">Post Content:</label></td>
+				<td><textarea name="content" required></textarea></td>
+			</tr>
+			<tr>
+				<td><button type="submit">Add Post</button></td>
+			</tr>
+		</table>
+	</form>
+{% endblock %}

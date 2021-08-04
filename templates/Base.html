@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Blogum - {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<header>
+    <main>Flask Blog</main>
+</header>
+<main>
+    <nav>
+        {% if 'username' in session %}
+        <a href="/logout">Log Out</a>
+        <a href="/addpost">Add Post</a>
+        {% else %}
+        <a href="/login">Login</a>
+        {% endif %}
+
+    </nav>
+
+    <content>
+        {% block main %}{% endblock %}
+    </content>
+</main>
+
+</body>
+</html>
