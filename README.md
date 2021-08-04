@@ -10,12 +10,13 @@
 # Database Operation
 Open Python Shell in Terminal
 
-from app import *
-database.create_tables([Editor, Post])
+1- from app import *
 
-Editor.create(username='your_username', password='your_password')
+2- database.create_tables([Editor, Post])
 
-Post.create(title=title, content=content)
+3- Editor.create(username='your_username', password='your_password')
+
+4- Post.create(title=title, content=content)
 
 
 # Now start the localhost server
