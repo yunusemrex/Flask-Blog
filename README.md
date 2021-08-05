@@ -16,7 +16,7 @@ Open Python Shell in Terminal
 
 3- Editor.create(username='your_username', password='your_password')
 
-4- Post.create(title=title, content=content)
+4- Post.create(title='title', content='content')
 
 
 # Now start the localhost server
